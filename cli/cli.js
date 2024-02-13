@@ -122,8 +122,7 @@ async function main() {
       serverStartCommand = "npm run web";
     }
 
-    process.chdir("../");
-    process.chdir(path.join(process.cwd(), `app`));
+    process.chdir(path.join(process.cwd(), appName));
 
     spinner.text = "";
     let appStartCommand = "";
@@ -162,9 +161,12 @@ async function main() {
     );
 
     log("-----------------------------");
+
+    log("");
     log(
       "Follow ROFI @ http://x.com/bidah for updates on the project and universal app development"
     );
+    log("");
   } catch (err) {
     log("Error: ", err);
     log("\n");
