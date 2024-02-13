@@ -77,16 +77,16 @@ async function main() {
     spinner.start();
     await execa("git", ["clone", repoUrl, appName]);
     try {
-      // if (uiLibrary === "gluestack") {
-      //   await execa("rm", ["-r", `${appName}/with-nativewind`]);
-      //   await execa("rm", ["-r", `${appName}/with-tamagui`]);
-      // } else if (uiLibrary === "nativewind") {
-      //   await execa("rm", ["-r", `${appName}/with-gluestack`]);
-      //   await execa("rm", ["-r", `${appName}/with-tamagui`]);
-      // }
-      // await execa("rm", ["-r", `${appName}/web`]);
-      // await execa("rm", ["-r", `${appName}/cli`]);
-      // await execa("rm", ["-rf", `${appName}/.git`]);
+      if (uiLibrary === "gluestack") {
+        await execa("rm", ["-r", `${appName}/with-nativewind`]);
+        await execa("rm", ["-r", `${appName}/with-tamagui`]);
+      } else if (uiLibrary === "nativewind") {
+        await execa("rm", ["-r", `${appName}/with-gluestack`]);
+        await execa("rm", ["-r", `${appName}/with-tamagui`]);
+      }
+      await execa("rm", ["-r", `${appName}/web`]);
+      await execa("rm", ["-r", `${appName}/cli`]);
+      await execa("rm", ["-rf", `${appName}/.git`]);
     } catch (err) {}
 
     const pwd = process.cwd();
