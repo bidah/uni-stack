@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "uni-stack-with-nativewind",
+    "slug": "uni-stack-with-nativewind",
+    "scheme": "com.uni.nativewind",
+    "userInterfaceStyle": "automatic",
+    "orientation": "portrait",
+    "version": "0.0.1",
+    "web": {
+      "output": "server",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://n"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
