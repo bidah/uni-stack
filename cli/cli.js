@@ -55,7 +55,7 @@ async function main() {
     if (!appName || !kebabRegez.test(args[0])) {
       appName = await input({
         message: "Enter your app name",
-        default: "unify-app",
+        default: "uni-app",
         validate: (d) => {
           if (!kebabRegez.test(d)) {
             return "please enter your app name in the format of my-app-name";
@@ -89,7 +89,6 @@ async function main() {
       await execa("rm", ["-rf", `${appName}/.git`]);
     } catch (err) {}
 
-    log("Moving folders");
     const pwd = process.cwd();
     log(pwd);
 
@@ -104,60 +103,46 @@ async function main() {
     fs.writeFileSync(`${appName}/package.json`, packageJson);
 
     spinner.text = "";
-    let serverStartCommand = "";
-
-    if (isBunInstalled()) {
-      spinner.text = "Installing dependencies";
-      await execaCommand("bun install").pipeStdout(process.stdout);
-      spinner.text = "";
-      serverStartCommand = "bun web";
-      console.log("\n");
-    } else if (isYarnInstalled()) {
-      await execaCommand("yarn").pipeStdout(process.stdout);
-      serverStartCommand = "yarn web";
-    } else {
-      spinner.text = "Installing dependencies";
-      await execa("npm", ["install", "--verbose"]).pipeStdout(process.stdout);
-      spinner.text = "";
-      serverStartCommand = "npm run web";
-    }
-
     process.chdir(path.join(process.cwd(), appName));
 
     spinner.text = "";
     let appStartCommand = "";
+    let packageManager = "";
 
     if (isBunInstalled()) {
       spinner.text = "Installing app dependencies";
       await execaCommand("bun install").pipeStdout(process.stdout);
       spinner.text = "";
       appStartCommand = "bun start";
+      packageManager = "bun";
       console.log("\n");
     } else if (isYarnInstalled()) {
       await execaCommand("yarn").pipeStdout(process.stdout);
       appStartCommand = "yarn start";
+      packageManager = "yarn";
     } else {
       spinner.text = "Installing app dependencies";
       await execa("npm", ["install", "--verbose"]).pipeStdout(process.stdout);
       spinner.text = "";
       appStartCommand = "npm start";
+      packageManager = "npm";
     }
     spinner.stop();
     process.chdir("../");
     log(
       `${green.bold(
         "Success!"
-      )} Created fullstack Expo universal native app setup for ${appName} at ${process.cwd()} \n`
+      )} Created fullstack Expo universal native app setup for ${appName}} \n`
     );
     log(
       `To get started run ${chalk.cyan(
-        serverStartCommand
-      )} to run the web app with the expo router API routes\n`
+        packageManager + " " + "web"
+      )} to spin up the web app with the expo router API routes\n `
     );
     log(
       `In a separate terminal, run ${chalk.cyan(
         appStartCommand
-      )} and to launch native app hit I for IOS simulator or A for Android emulator in your keyboard\n`
+      )}. To launch native app hit I for IOS simulator or A for Android emulator in your keyboard\n`
     );
 
     log("-----------------------------");
