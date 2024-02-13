@@ -84,12 +84,18 @@ async function main() {
         await execa("rm", ["-r", `${appName}/with-gluestack`]);
         await execa("rm", ["-r", `${appName}/with-tamagui`]);
       }
+      await execa("rm", ["-r", `${appName}/web`]);
       await execa("rm", ["-r", `${appName}/cli`]);
       await execa("rm", ["-rf", `${appName}/.git`]);
     } catch (err) {}
 
-    await execa("mv", [`${appName}/with-${uiLibrary}/*`, `${appName}/`]);
-    await execa("rm", ["-r", `${appName}/with-nativewind`]);
+    log("Moving folders");
+    const pwd = process.cwd();
+    log(pwd);
+
+    await execaCommand(`mv ${pwd}/${appName}/with-${uiLibrary} ${pwd}`);
+    await execaCommand(`rm -rf ${appName}`);
+    await execaCommand(`mv with-${uiLibrary} ${appName}`);
 
     let packageJson = fs.readFileSync(`${appName}/package.json`, "utf8");
     const packageObj = JSON.parse(packageJson);
@@ -160,6 +166,7 @@ async function main() {
       "Follow ROFI @ http://x.com/bidah for updates on the project and universal app development"
     );
   } catch (err) {
+    log("Error: ", err);
     log("\n");
     if (err.exitCode == 128) {
       log("Error: directory already exists.");
