@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "uni-stack-with-gluestack",
+    "slug": "uni-stack-with-gluestack",
+    "scheme": "com.uni.gluestack",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": ["**/*"],
+    "web": {
+      "output": "server",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://n"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
