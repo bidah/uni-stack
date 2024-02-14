@@ -18,7 +18,7 @@ npx create-uni-app
 npm web
 ```
 
-This spin up the web app with expo router API routes
+This spins up the web app with expo router API routes
 
 ## Run native apps
 
