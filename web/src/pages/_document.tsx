@@ -4,9 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-    <title>YOUR_WEBSITE</title>
-      <meta name="title" content="uni stack">
-      <meta name="description" content="typesafe setup to build fullstack expo universal native apps"></meta>
+        <title>UNI STACK</title>
+        <meta name="title" content="uni stack" />
+        <meta
+          name="description"
+          content="typesafe setup to build fullstack expo universal native apps"
+        ></meta>
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://uni-stack.vercel.app/" />
         <meta property="twitter:title" content="uni stack" />

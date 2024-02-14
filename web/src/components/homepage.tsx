@@ -36,8 +36,15 @@ export function Homepage() {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl">
+                <span className="text-xl md:text-5xl lg:text-6xl">
+                  <span>️⚛</span>
+                  <span className="ml-4">💻</span>
+                  <span className="ml-1">📱</span>
+                  <span className="ml-1"></span>
+                </span>
                 typesafe setup to build fullstack expo universal native apps
               </h1>
+
               {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 Running everywhere using Expo, Trpc, Prisma and Nativewind.
               </p> */}
@@ -129,7 +136,7 @@ export function Homepage() {
                 size="icon"
                 variant="ghost"
                 onClick={() =>
-                  navigator.clipboard.writeText("npx create-uni-stack-app")
+                  navigator.clipboard.writeText("npx create-uni-app")
                 }
               >
                 <CopyIcon className="h-6 w-6" />
