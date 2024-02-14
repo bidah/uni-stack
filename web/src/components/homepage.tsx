@@ -123,9 +123,7 @@ export function Homepage() {
               get started now
             </h2>
             <div className="flex items-center justify-between bg-white text-black rounded-md px-4 py-3">
-              <span className="text-4xl font-light">
-                npx create-uni-stack-app@latest
-              </span>
+              <span className="text-4xl font-light">npx create-uni-app</span>
               <span className="w-6" />
               <Button
                 size="icon"
