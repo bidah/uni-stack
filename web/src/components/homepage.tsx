@@ -3,6 +3,12 @@ import Image from "next/image";
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { HoverEffect } from "./ui/hover-effect";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 const items = [
   {
@@ -112,19 +118,29 @@ export function Homepage() {
             <div className="flex items-center justify-between bg-white text-black rounded-md px-4 py-3">
               <span className="text-4xl font-light">npx create-uni-app</span>
               <span className="w-6" />
-              <Button
-                size="icon"
-                variant="ghost"
-                onClick={() =>
-                  navigator.clipboard.writeText("npx create-uni-app")
-                }
-              >
-                <CopyIcon className="h-6 w-6" />
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      size="icon"
+                      variant="ghost"
+                      onClick={() =>
+                        navigator.clipboard.writeText("npx create-uni-app")
+                      }
+                    >
+                      <CopyIcon className="h-6 w-6" />
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent className="animate-fadeIn">
+                    Copy to clipboard
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
         </div>
       </section>
+
       <footer className="py-4 pt-12 text-xl text-center align-center">
         <p>
           →{" "}
