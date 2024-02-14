@@ -11,7 +11,7 @@
     "prisma:generate": "npx prisma generate --schema src/prisma/schema.prisma",
     "prisma:push": "npx prisma db push --schema src/prisma/schema.prisma",
     "prisma:pull": "npx prisma db pull --schema src/prisma/schema.prisma",
-    "prisma:introspect": "npx prisma introspect --schema src/prisma/schema.prisma..."
+    "prisma:introspect": "npx prisma introspect --schema src/prisma/schema.prisma"
   },
   "jest": {
     "preset": "jest-expo"
