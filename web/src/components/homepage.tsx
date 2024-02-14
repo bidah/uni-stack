@@ -4,6 +4,44 @@ import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { HoverEffect } from "./ui/hover-effect";
 
+const items = [
+  {
+    title: "Expo v50",
+    description:
+      "Expo and EAS form a collection of tools that facilitate the development, testing, and deployment of React-based universal native apps for Android, iOS, and the web. These tools provide a seamless workflow to iterate on your app with assurance.",
+    link: "#",
+  },
+  {
+    title: "Typescript v5",
+    description:
+      "TypeScript improves codebase by adding static typing, enhanced tooling, better scalability, and easier collaboration, resulting in more maintainable and reliable software. Integrated with Expo, Expo router, Prisma & Trpc.",
+    link: "#",
+  },
+  {
+    title: "Prisma v5.9",
+    description:
+      "Prisma enhances the developer experience in working with databases by offering an intuitive data model, automated migrations, type-safety, and auto-completion.",
+    link: "#",
+  },
+  {
+    title: "tRPC v11",
+    description:
+      "Automatic typesafety, snappy DX, framework agnostic. Autocompletion, light bundle size. No build or compile steps, no code generation or runtime bloat. Confidence in endpoints. Integrated to expo-router API routes.",
+    link: "#",
+  },
+  {
+    title: "Expo Router v3",
+    description:
+      "Expo Router is a versatile router for React Native and web apps. It facilitates seamless navigation between screens, utilizing shared components across platforms (Android, iOS, web). This universal tool incorporates web file-system routing concepts, enabling consistent routing across all platforms.",
+    link: "#",
+  },
+  {
+    title: "Nativewind v4 • Tamagui • Gluestack UI",
+    description:
+      "Cherry pick your UI driver. We have 3 options which bring in the best configurations for your app to have a strong theme setup and UI. The choice is yours.",
+    link: "#",
+  },
+];
 export function Homepage() {
   return (
     <main
@@ -60,6 +98,12 @@ export function Homepage() {
       </section>
 
       <section className="w-full flex justify-center py-6 md:py-12 lg:py-24 md:pt-0 lg:pt-0">
+        <div className="container px-4 md:px-6">
+          <HoverEffect items={items} />
+        </div>
+      </section>
+
+      {/* <section className="w-full flex justify-center py-6 md:py-12 lg:py-24 md:pt-0 lg:pt-0">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             <Card>
@@ -129,7 +173,7 @@ export function Homepage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
@@ -152,46 +196,6 @@ export function Homepage() {
           </div>
         </div>
       </section>
-      <HoverEffect
-        items={[
-          {
-            title: "Expo v50",
-            description:
-              "Expo and EAS form a collection of tools that facilitate the development, testing, and deployment of React-based universal native apps for Android, iOS, and the web. These tools provide a seamless workflow to iterate on your app with assurance.",
-            link: "#",
-          },
-          {
-            title: "Typescript v5",
-            description:
-              "TypeScript improves codebase by adding static typing, enhanced tooling, better scalability, and easier collaboration, resulting in more maintainable and reliable software. Integrated with Expo, Expo router, Prisma & Trpc.",
-            link: "#",
-          },
-          {
-            title: "Prisma v5.9",
-            description:
-              "Prisma enhances the developer experience in working with databases by offering an intuitive data model, automated migrations, type-safety, and auto-completion.",
-            link: "#",
-          },
-          {
-            title: "tRPC v11",
-            description:
-              "Automatic typesafety, snappy DX, framework agnostic. Autocompletion, light bundle size. No build or compile steps, no code generation or runtime bloat. Confidence in endpoints. Integrated to expo-router API routes.",
-            link: "#",
-          },
-          {
-            title: "Expo Router v3",
-            description:
-              "Expo Router is a versatile router for React Native and web apps. It facilitates seamless navigation between screens, utilizing shared components across platforms (Android, iOS, web). This universal tool incorporates web file-system routing concepts, enabling consistent routing across all platforms.",
-            link: "#",
-          },
-          {
-            title: "Nativewind v4 • Tamagui • Gluestack UI",
-            description:
-              "Cherry pick your UI driver. We have 3 options which bring in the best configurations for your app to have a strong theme setup and UI. The choice is yours.",
-            link: "#",
-          },
-        ]}
-      />
       <footer className="py-4 pt-12 text-xl text-center align-center">
         <p>
           →{" "}
