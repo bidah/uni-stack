@@ -15,7 +15,7 @@ npx create-uni-app
 ## Run web app and API
 
 ```sh
-npm web
+npm run web
 ```
 
 This spins up the web app with expo router API routes
@@ -25,7 +25,7 @@ This spins up the web app with expo router API routes
 In a separate terminal run
 
 ```sh
-npm start
+npm run start
 ```
 
 To launch native app hit I for IOS simulator or A for Android emulator in your keyboard
@@ -41,6 +41,29 @@ To launch native app hit I for IOS simulator or A for Android emulator in your k
   - Nativewind v4
   - Tamagui
   - Gluestack UI
+- SQLite database
+
+## Prisma
+
+> SQLite database comes with two tables `users`, and `posts` for you to try out the setup.
+
+To generate and instantiate Prisma Client run:
+
+```sh
+npm run prisma:generate
+```
+
+The db push command pushes the state of your Prisma schema file to the database without using migrations.
+
+```sh
+npm run prisma:push
+```
+
+Explore and manipulate your data with a web UI
+
+```sh
+npm run prisma:studio
+```
 
 ## Contributing
 
