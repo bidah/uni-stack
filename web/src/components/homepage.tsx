@@ -79,8 +79,8 @@ export function Homepage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl">
-                <span className="text-xl md:text-5xl lg:text-6xl">
+              <h1 className="text-xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+                <span className="text-xl md:text-4xl lg:text-5xl">
                   <span>️⚛</span>
                   <span className="ml-4">💻</span>
                   <span className="ml-1">📱</span>
@@ -103,77 +103,6 @@ export function Homepage() {
         </div>
       </section>
 
-      {/* <section className="w-full flex justify-center py-6 md:py-12 lg:py-24 md:pt-0 lg:pt-0">
-        <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-            <Card>
-              <CardHeader>
-                <CardTitle>Expo v50</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Expo and EAS form a collection of tools that facilitate the
-                development, testing, and deployment of React-based universal
-                native apps for Android, iOS, and the web. These tools provide a
-                seamless workflow to iterate on your app with assurance.
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Typescript v5</CardTitle>
-              </CardHeader>
-              <CardContent>
-                TypeScript improves codebase by adding static typing, enhanced
-                tooling, better scalability, and easier collaboration, resulting
-                in more maintainable and reliable software. Integrated with
-                Expo, Expo router, Prisma & Trpc.
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Prisma v5.9</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Prisma enhances the developer experience in working with
-                databases by offering an intuitive data model, automated
-                migrations, type-safety, and auto-completion.
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>tRPC v11</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Automatic typesafety, snappy DX, framework agnostic.
-                Autocompletion, light bundle size. No build or compile steps, no
-                code generation or runtime bloat. Confidence in endpoints.
-                Integrated to expo-router API routes.
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Expo Router v3</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Expo Router is a versatile router for React Native and web apps.
-                It facilitates seamless navigation between screens, utilizing
-                shared components across platforms (Android, iOS, web). This
-                universal tool incorporates web file-system routing concepts,
-                enabling consistent routing across all platforms.
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Nativewind v4 • Tamagui • Gluestack UI</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Cherry pick your UI driver. We have 3 options which bring in the
-                best configurations for your app to have a strong theme setup
-                and UI. The choice is yours.
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section> */}
       <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
