@@ -48,7 +48,7 @@ const items = [
     links: [
       {
         title: "Nativewind",
-        link: "https://www.nativewind.dev/v4/overview",
+        link: "http://www.nativewind.dev",
       },
       {
         title: "Tamagui",
@@ -80,8 +80,8 @@ export function Homepage() {
             <Image
               src="./x-twitter.svg"
               alt="SVG Image"
-              width={40}
-              height={40}
+              width={30}
+              height={30}
             />
           </Link>
           <Link
@@ -89,7 +89,7 @@ export function Homepage() {
             href="https://github.com/bidah/uni-stack"
             target="_blank"
           >
-            <Image src="./github.svg" alt="SVG Image" width={40} height={40} />
+            <Image src="./github.svg" alt="SVG Image" width={30} height={30} />
           </Link>
         </div>
       </header>
