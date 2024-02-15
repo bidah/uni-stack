@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
+import { Button } from "./button";
 
 export const HoverEffect = ({
   items,
@@ -25,41 +26,88 @@ export const HoverEffect = ({
         className
       )}
     >
-      {items.map((item, idx) => (
-        <Link
-          onClick={(e) => (!item.link ? e.preventDefault() : "")}
-          href={item?.link ?? ""}
-          target="_blank"
-          key={idx}
-          className="relative group  block p-2 h-full w-full"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
-          <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-gray-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: { duration: 0.15 },
-                }}
-                exit={{
-                  opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
-                }}
-              />
-            )}
-          </AnimatePresence>
-          <_Card>
-            <CardHeader>
-              <CardTitle>{item.title}</CardTitle>
-            </CardHeader>
-            <CardContent>{item.description}</CardContent>
-          </_Card>
-        </Link>
-      ))}
+      {items.map((item, idx) => {
+        return item.links ? (
+          <div
+            // onClick={(e) => (!item.link ? e.preventDefault() : "")}
+            href={item?.link ?? ""}
+            target="_blank"
+            key={idx}
+            className="relative group  block p-2 h-full w-full"
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.span
+                  className="absolute inset-0 h-full w-full bg-gray-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.15 },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <_Card>
+              <CardHeader>
+                <CardTitle>{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                {item.description}
+                <br /> →&nbsp;&nbsp;&nbsp;
+                {item.links &&
+                  item.links.map((item, idx) => (
+                    <Link href={item.link} target="_blank" key={idx}>
+                      <Button variant="link" className="pl-0">
+                        {item.title}
+                      </Button>
+                    </Link>
+                  ))}
+              </CardContent>
+            </_Card>
+          </div>
+        ) : (
+          <Link
+            // onClick={(e) => (!item.link ? e.preventDefault() : "")}
+            href={item?.link ?? ""}
+            target="_blank"
+            key={idx}
+            className="relative group  block p-2 h-full w-full"
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.span
+                  className="absolute inset-0 h-full w-full bg-gray-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.15 },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <_Card>
+              <CardHeader>
+                <CardTitle>{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent>{item.description}</CardContent>
+            </_Card>
+          </Link>
+        );
+      })}
     </div>
   );
 };
