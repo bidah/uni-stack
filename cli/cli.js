@@ -135,14 +135,18 @@ async function main() {
     log(
       `${green.bold(
         "Success!"
-      )} Created fullstack Expo universal native app setup for ${appName}} \n`
+      )} Created fullstack Expo universal native app setup for ${appName} \n`
     );
 
-    log(`To get started configure your Prisma Client with:
-    ${chalk.cyan(
-      "npm run prisma:generate"
-    )} You will get a "TypeError: ExpoResponse is not a constructor" error if you don't do this before running the server
-    `);
+    log(
+      `To get started configure your Prisma Client with: ${chalk.cyan(
+        "npm run prisma:generate"
+      )}`
+    );
+    log(
+      `You will get a "TypeError: ExpoResponse is not a constructor" error if you don't do this before running the server`
+    );
+
     log(
       `Next run ${chalk.cyan(
         packageManager + " " + "web"
