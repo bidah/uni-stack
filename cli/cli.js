@@ -94,7 +94,6 @@ async function main() {
     } catch (err) {}
 
     const pwd = process.cwd();
-    log(pwd);
 
     await execaCommand(`mv ${pwd}/${appName}/with-${uiLibrary} ${pwd}`);
     await execaCommand(`rm -rf ${appName}`);
