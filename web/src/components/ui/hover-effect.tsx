@@ -11,7 +11,8 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    link: string;
+    link?: string;
+    links?: Array<{ title: string; link: string }>;
   }[];
   className?: string;
 }) => {
@@ -25,7 +26,10 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <div
+        <Link
+          onClick={(e) => (!item.link ? e.preventDefault() : "")}
+          href={item?.link ?? ""}
+          target="_blank"
           key={idx}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -54,7 +58,7 @@ export const HoverEffect = ({
             </CardHeader>
             <CardContent>{item.description}</CardContent>
           </_Card>
-        </div>
+        </Link>
       ))}
     </div>
   );
