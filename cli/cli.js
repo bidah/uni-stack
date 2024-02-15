@@ -44,7 +44,7 @@ async function main() {
     program
       .name("Create uni app")
       .description(
-        "Full Stack React Native Boilerplate for building streaming AI apps."
+        "Typesafe setup to build fullstack expo universal native apps"
       );
 
     program.parse(process.argv);
