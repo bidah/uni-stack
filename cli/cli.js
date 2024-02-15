@@ -141,10 +141,10 @@ async function main() {
     log(
       `To get started configure your Prisma Client with: ${chalk.cyan(
         "npm run prisma:generate"
-      )}`
+      )} \n`
     );
     log(
-      `You will get a "TypeError: ExpoResponse is not a constructor" error if you don't do this before running the server`
+      `You will get a "TypeError: ExpoResponse is not a constructor" error if you don't do this before running the server \n`
     );
 
     log(
