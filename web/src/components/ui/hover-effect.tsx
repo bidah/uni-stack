@@ -29,9 +29,6 @@ export const HoverEffect = ({
       {items.map((item, idx) => {
         return item.links ? (
           <div
-            // onClick={(e) => (!item.link ? e.preventDefault() : "")}
-            href={item?.link ?? ""}
-            target="_blank"
             key={idx}
             className="relative group  block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
