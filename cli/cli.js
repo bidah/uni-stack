@@ -69,6 +69,7 @@ async function main() {
       message: "Which UI library do you want to use?",
       choices: [
         { name: "Nativewind v4", value: "nativewind" },
+        { name: "Tamagui", value: "tamagui" },
         { name: "Gluestack UI", value: "gluestack" },
       ],
       default: "Nativewind v4",
@@ -83,6 +84,9 @@ async function main() {
       } else if (uiLibrary === "nativewind") {
         await execa("rm", ["-r", `${appName}/with-gluestack`]);
         await execa("rm", ["-r", `${appName}/with-tamagui`]);
+      } else if (uiLibrary === "tamagui") {
+        await execa("rm", ["-r", `${appName}/with-gluestack`]);
+        await execa("rm", ["-r", `${appName}/with-nativewind`]);
       }
       await execa("rm", ["-r", `${appName}/web`]);
       await execa("rm", ["-r", `${appName}/cli`]);
