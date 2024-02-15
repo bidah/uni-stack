@@ -1,6 +1,6 @@
 {
   "name": "create-uni-app",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Typesafe setup to build fullstack Expo universal native apps",
   "type": "module",
   "bin": "cli.js",
