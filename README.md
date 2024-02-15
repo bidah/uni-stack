@@ -1,4 +1,4 @@
-# [️⚛💻📱UNI STACK](http://dub.sh/uni-stack)
+# [️⚛💻📱UNI STACK](https://www.uni-stack.dev/)
 
 ### typesafe setup to build fullstack expo universal native apps.
 
