@@ -48,7 +48,7 @@ const items = [
     links: [
       {
         title: "Nativewind",
-        link: "http://www.nativewind.dev",
+        link: "https://www.nativewind.dev/v4/overview",
       },
       {
         title: "Tamagui",
