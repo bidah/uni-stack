@@ -7,21 +7,19 @@ const Home = () => {
 
   return (
     <View
-      mt={20}
-      backgroundColor={"$red200"}
+      backgroundColor={"white"}
       flex={1}
       justifyContent="center"
       alignItems="center"
     >
-      <Text color={"$blue5Dark"}>hello</Text>
-      {/* <Text color="white" fontSize="3xl">
+      <Text color="black" fontSize="$9">
         {firstPost.data?.title}
       </Text>
-      <View maxWidth={{ web: 400, native: "auto" }} mx={{ native: 3 }}>
-        <Text color="white" fontSize="md">
+      <View>
+        <Text color="black" fontSize="$4">
           {firstPost.data?.content}
         </Text>
-      </View> */}
+      </View>
     </View>
   );
 };

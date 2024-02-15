@@ -1,5 +1,5 @@
 {
-  "name": "testing-tamagui-with-expo-router",
+  "name": "nate-fix-tamagui-expo-router",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -23,7 +23,7 @@
     "@react-navigation/native": "^6.0.2",
     "@tamagui/config": "^1.89.23",
     "@tamagui/metro-plugin": "^1.89.23",
-    "@tanstack/react-query": "^5.20.2",
+    "@tanstack/react-query": "^5.20.5",
     "@trpc/client": "^10.45.1",
     "@trpc/react-query": "^10.45.1",
     "@trpc/server": "^10.45.1",

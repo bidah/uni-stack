@@ -2346,60 +2346,60 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@floating-ui/core@npm:^1.0.0, @floating-ui/core@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "@floating-ui/core@npm:1.6.0"
+"@floating-ui/core@npm:^1.5.3":
+  version: 1.5.3
+  resolution: "@floating-ui/core@npm:1.5.3"
   dependencies:
-    "@floating-ui/utils": "npm:^0.2.1"
-  checksum: d6a47cacde193cd8ccb4c268b91ccc4ca254dffaec6242b07fd9bcde526044cc976d27933a7917f9a671de0a0e27f8d358f46400677dbd0c8199de293e9746e1
-  languageName: node
-  linkType: hard
-
-"@floating-ui/dom@npm:^1.6.1":
-  version: 1.6.3
-  resolution: "@floating-ui/dom@npm:1.6.3"
-  dependencies:
-    "@floating-ui/core": "npm:^1.0.0"
     "@floating-ui/utils": "npm:^0.2.0"
-  checksum: 83e97076c7a5f55c3506f574bc53f03d38bed6eb8181920c8733076889371e287e9ae6f28c520a076967759b9b6ff425362832a5cdf16a999069530dbb9cce53
+  checksum: 7d9feaca2565a2a71bf03d23cd292c03def63097d7fde7d62909cdb8ddb84664781f3922086bcf10443f3310cb92381a0ecf745b2774edb917fa74fe61015c56
   languageName: node
   linkType: hard
 
-"@floating-ui/react-dom@npm:^2.0.6, @floating-ui/react-dom@npm:^2.0.8":
-  version: 2.0.8
-  resolution: "@floating-ui/react-dom@npm:2.0.8"
+"@floating-ui/dom@npm:^1.5.4":
+  version: 1.5.4
+  resolution: "@floating-ui/dom@npm:1.5.4"
   dependencies:
-    "@floating-ui/dom": "npm:^1.6.1"
+    "@floating-ui/core": "npm:^1.5.3"
+    "@floating-ui/utils": "npm:^0.2.0"
+  checksum: 3ba02ba2b4227c1e18df6ccdd029a1c100058db2e76ca1dac60a593ec72b2d4d995fa5c2d1639a5c38adb17e12398fbfe4f6cf5fd45f2ee6170ed0cf64acea06
+  languageName: node
+  linkType: hard
+
+"@floating-ui/react-dom@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@floating-ui/react-dom@npm:2.0.6"
+  dependencies:
+    "@floating-ui/dom": "npm:^1.5.4"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: e57b2a498aecf8de0ec28adf434257fca7893bd9bd7e78b63ac98c63b29b9fc086fc175630154352f3610f5c4a0d329823837f4f6c235cc0459fde6417065590
+  checksum: 4a3f828370c1b14af0e4d24df18de7b2cfd6695c189532d5949daaa43cba13ce7f231c71783b47e8c54baefcc2542650d82a4a6cebcf3d9091673f2a53d3a2cb
   languageName: node
   linkType: hard
 
 "@floating-ui/react-native@npm:^0.10.3":
-  version: 0.10.4
-  resolution: "@floating-ui/react-native@npm:0.10.4"
+  version: 0.10.3
+  resolution: "@floating-ui/react-native@npm:0.10.3"
   dependencies:
-    "@floating-ui/core": "npm:^1.6.0"
+    "@floating-ui/core": "npm:^1.5.3"
   peerDependencies:
     react: ">=16.8.0"
     react-native: ">=0.64.0"
-  checksum: 39745c55e7acdc66b0c14312249d105d5afe8234631e24d8d2560cd8995e7e6c28bb0437ac84e90f3d79b9c05b31a224d445a15767b0f8709590cd3e087f4492
+  checksum: 78f8425447e80e58cf9225cb4450a0124476a3312a69f303111f2c13abc5d7d3ce4582c75471647a504a555a3c7c9c911b7c6c381629180840dfb0d381a73614
   languageName: node
   linkType: hard
 
 "@floating-ui/react@npm:^0.26.6":
-  version: 0.26.9
-  resolution: "@floating-ui/react@npm:0.26.9"
+  version: 0.26.6
+  resolution: "@floating-ui/react@npm:0.26.6"
   dependencies:
-    "@floating-ui/react-dom": "npm:^2.0.8"
+    "@floating-ui/react-dom": "npm:^2.0.6"
     "@floating-ui/utils": "npm:^0.2.1"
     tabbable: "npm:^6.0.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 997f5a471ac6080c5162ad86fbb8e5bc0eca9335c40d8445597a90ba645e5d35ee796c29bdc66d868182afe5901804ecd52b82560332ae123b0c269400421e63
+  checksum: 15085b58e527f9acf617c434f9d3591ee69f039b0ebfb92374a2efdfb67fe5d21c36e4ce70eba13b41cdcfd355618e5bb1465706045f3774e1ce4884bb0c37e1
   languageName: node
   linkType: hard
 
@@ -4744,21 +4744,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.20.2":
-  version: 5.20.2
-  resolution: "@tanstack/query-core@npm:5.20.2"
-  checksum: affe86f45e661e19e3de3e03c94f9409c6aadc8bcf9a6b59c1ce766b13248d079904f3a00fa9eb34ceb4bd227d3ec9dd0299d20062a34553d465d56c11d798a4
+"@tanstack/query-core@npm:5.20.5":
+  version: 5.20.5
+  resolution: "@tanstack/query-core@npm:5.20.5"
+  checksum: ca495a213850a79a23ea45a4e22982e06eea07959f7cf5062c154dc8c7fc01f7cc7f1f8abf74cdb2a9f38347f1df9a39238fbee6cd49662e464064d92cf1c48b
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^5.20.2":
-  version: 5.20.2
-  resolution: "@tanstack/react-query@npm:5.20.2"
+"@tanstack/react-query@npm:^5.20.5":
+  version: 5.20.5
+  resolution: "@tanstack/react-query@npm:5.20.5"
   dependencies:
-    "@tanstack/query-core": "npm:5.20.2"
+    "@tanstack/query-core": "npm:5.20.5"
   peerDependencies:
     react: ^18.0.0
-  checksum: f769f6b18c06aa362c3b6a786c17801d0977e4fedb30ac6b548db977401d802cadfb3cd0052456b5f271c3a28eeaa3a6cf7056530e2cf0aaca9a7ddc009e948b
+  checksum: 77b3129f8a44a0dcca4cc5eb34b877cce08c8ee41f13585bed4fe1b1b9c4a8823e454e8989b6dc4c240cda69604efa70dd7c6b954f4e4f6aefcf518254079f96
   languageName: node
   linkType: hard
 
@@ -9455,6 +9455,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nate-fix-tamagui-expo-router@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "nate-fix-tamagui-expo-router@workspace:."
+  dependencies:
+    "@babel/core": "npm:^7.23.3"
+    "@expo/metro-runtime": "npm:3.1.1"
+    "@prisma/client": "npm:^5.9.1"
+    "@react-navigation/native": "npm:^6.0.2"
+    "@tamagui/config": "npm:^1.89.23"
+    "@tamagui/metro-plugin": "npm:^1.89.23"
+    "@tanstack/react-query": "npm:^5.20.5"
+    "@trpc/client": "npm:^10.45.1"
+    "@trpc/react-query": "npm:^10.45.1"
+    "@trpc/server": "npm:^10.45.1"
+    "@types/react": "npm:~18.2.14"
+    babel-preset-expo: "npm:^10.0.1"
+    expo: "npm:50.0.2"
+    expo-font: "npm:~11.10.2"
+    expo-linking: "npm:~6.2.1"
+    expo-router: "npm:~3.4.4"
+    expo-splash-screen: "npm:~0.26.3"
+    expo-status-bar: "npm:~1.11.1"
+    expo-system-ui: "npm:~2.9.3"
+    expo-web-browser: "npm:~12.8.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    react-helmet-async: "npm:~2.0.4"
+    react-native: "npm:0.73.2"
+    react-native-safe-area-context: "npm:4.8.2"
+    react-native-screens: "npm:~3.29.0"
+    react-native-web: "npm:^0.19.9"
+    tamagui: "npm:^1.89.23"
+    typescript: "npm:^5.3.0"
+    zod: "npm:^3.22.4"
+  languageName: unknown
+  linkType: soft
+
 "ncp@npm:~2.0.0":
   version: 2.0.0
   resolution: "ncp@npm:2.0.0"
@@ -11823,43 +11860,6 @@ __metadata:
   checksum: 0282c5c065cbfa1e725d5609b99579252bc20b83cd1d75e8ab8b46d5da2c9d0fcfc453a12624f2d2d4c1240bfa0017a90fcf1e3b88258e5842fca1b0b82be8d8
   languageName: node
   linkType: hard
-
-"testing-tamagui-with-expo-router@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "testing-tamagui-with-expo-router@workspace:."
-  dependencies:
-    "@babel/core": "npm:^7.23.3"
-    "@expo/metro-runtime": "npm:3.1.1"
-    "@prisma/client": "npm:^5.9.1"
-    "@react-navigation/native": "npm:^6.0.2"
-    "@tamagui/config": "npm:^1.89.23"
-    "@tamagui/metro-plugin": "npm:^1.89.23"
-    "@tanstack/react-query": "npm:^5.20.2"
-    "@trpc/client": "npm:^10.45.1"
-    "@trpc/react-query": "npm:^10.45.1"
-    "@trpc/server": "npm:^10.45.1"
-    "@types/react": "npm:~18.2.14"
-    babel-preset-expo: "npm:^10.0.1"
-    expo: "npm:50.0.2"
-    expo-font: "npm:~11.10.2"
-    expo-linking: "npm:~6.2.1"
-    expo-router: "npm:~3.4.4"
-    expo-splash-screen: "npm:~0.26.3"
-    expo-status-bar: "npm:~1.11.1"
-    expo-system-ui: "npm:~2.9.3"
-    expo-web-browser: "npm:~12.8.1"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-helmet-async: "npm:~2.0.4"
-    react-native: "npm:0.73.2"
-    react-native-safe-area-context: "npm:4.8.2"
-    react-native-screens: "npm:~3.29.0"
-    react-native-web: "npm:^0.19.9"
-    tamagui: "npm:^1.89.23"
-    typescript: "npm:^5.3.0"
-    zod: "npm:^3.22.4"
-  languageName: unknown
-  linkType: soft
 
 "text-table@npm:^0.2.0":
   version: 0.2.0

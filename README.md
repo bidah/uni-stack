@@ -6,13 +6,23 @@
 
 ## Usage
 
+### Starter installation
+
 Create a new project with option to select your prefered UI library with:
 
 ```sh
 npx create-uni-app
 ```
 
-## Run web app and API
+### Configure your Prisma Client
+
+⚠️ you will get a `TypeError: ExpoResponse is not a constructor` error if you don't do this before running the server
+
+```sh
+npm run prisma:generate
+```
+
+### Run web app and API
 
 ```sh
 npm run web
@@ -20,7 +30,7 @@ npm run web
 
 This spins up the web app with expo router API routes
 
-## Run native apps
+### Run native apps
 
 In a separate terminal run
 
@@ -73,7 +83,7 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 ### Rodrigo Figueroa
 
-Follow Rodrigo Figueroa, creator of `react-native-vercel-ai` on Twitter: [@bidah](https://twitter.com/bidah)
+Follow Rodrigo Figueroa, creator of `uni-stack` for updates on the project and universal app development on [x/twitter](https://twitter.com/bidah)
 
 ## License
 

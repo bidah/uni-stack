@@ -4,7 +4,8 @@ import { httpBatchLink } from "@trpc/client";
 import React, { useState } from "react";
 import { Button, ScrollView, Text, TextInput, View } from "react-native";
 import { TamaguiProvider } from "tamagui";
-import { config } from "./tamagui.config";
+import config from "tamagui.config";
+
 function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
   const [trpcClient] = useState(() =>

@@ -134,8 +134,12 @@ async function main() {
         "Success!"
       )} Created fullstack Expo universal native app setup for ${appName}} \n`
     );
+
+    log(`To get started configure your Prisma Client with:
+    ${chalk.cyan('npm run prisma:generate')} You will get a `TypeError: ExpoResponse is not a constructor` error if you don't do this before running the server
+    `)
     log(
-      `To get started run ${chalk.cyan(
+      `Next run ${chalk.cyan(
         packageManager + " " + "web"
       )} to spin up the web app with the expo router API routes\n `
     );
