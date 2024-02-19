@@ -57,11 +57,16 @@ export const HoverEffect = ({
               </CardHeader>
               <CardContent>
                 {item.description}
-                <br /> →&nbsp;&nbsp;&nbsp;
+                <br />
                 {item.links &&
                   item.links.map((item, idx) => (
                     <Link href={item.link} target="_blank" key={idx}>
-                      <Button variant="link" className="pl-0 text-black">
+                      →&nbsp;
+                      <Button
+                        size="sm"
+                        variant="link"
+                        className="pl-0 text-black"
+                      >
                         {item.title}
                       </Button>
                     </Link>
