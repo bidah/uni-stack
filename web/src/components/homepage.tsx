@@ -55,7 +55,7 @@ const items = [
         link: "http://www.tamagui.dev",
       },
       {
-        title: "Gluestack UI",
+        title: "Gluestack-ui",
         link: "https://gluestack.io/ui/docs/overview/introduction",
       },
     ],
