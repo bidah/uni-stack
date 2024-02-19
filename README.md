@@ -85,6 +85,11 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 Follow Rodrigo Figueroa, creator of `uni-stack` for updates on the project and universal app development on [x/twitter](https://twitter.com/bidah)
 
+## Credits
+
+- [Nader Dabit](https://x.com/dabit3) for RN-AI and using it's CLI setup as a template to build uni-stack CLI.
+- [Nishan](https://x.com/nishanbende) for [expo-trpc](https://github.com/intergalacticspacehighway/expo-trpc) starter that served as inspiration to build this setup.
+
 ## License
 
 MIT
