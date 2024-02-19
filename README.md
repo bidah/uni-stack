@@ -89,6 +89,8 @@ Follow Rodrigo Figueroa, creator of `uni-stack` for updates on the project and u
 
 - [Nader Dabit](https://x.com/dabit3) for [RN-AI](https://github.com/dabit3/react-native-ai) and using it's CLI setup as a template to build uni-stack CLI.
 - [Nishan](https://x.com/nishanbende) for [expo-trpc](https://github.com/intergalacticspacehighway/expo-trpc) starter that served as inspiration to build this setup.
+- [Nate Birdman](https://x.com/natebirdman) from [Tamagui](https://tamagui.dev/) for testing this modified version of the Tamagui Expo Router starter and fixing various issues.
+- [Sanket Sahu](https://x.com/sanketsahu) from [Gluestack](https://gluestack.io/) for being the first to join the conversation about the project and offer his support.
 
 ## License
 
