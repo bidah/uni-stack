@@ -14,6 +14,14 @@ Create a new project with option to select your prefered UI library with:
 npx create-uni-app
 ```
 
+### Set .env file
+
+Rename .env.sample to .env
+
+```sh
+mv .env.sample .env
+```
+
 ### Configure your Prisma Client
 
 ⚠️ you will get a `TypeError: ExpoResponse is not a constructor` error if you don't do this before running the server
