@@ -158,12 +158,21 @@ async function main() {
       )}. To launch native app hit I for IOS simulator or A for Android emulator in your keyboard\n`
     );
 
-    log("-----------------------------");
+    log("");
+    log(" -------------------------------------------------");
+    log("| Follow ROFI @ http://x.com/bidah for updates on |");
+    log("| the project and universal app development.      |");
+    log(" -------------------------------------------------");
 
     log("");
-    log(
-      "Follow ROFI @ http://x.com/bidah for updates on the project and universal app development"
-    );
+
+    log(" -------------------------------------------------");
+    log("| Universal State of Mind newsletter              |");
+    log("| Get the latest news and resources about the     |");
+    log("| React Native multi-platform ecosystem.          |");
+    log("| subscribe → http://dub.sh/usom                  |");
+    log(" -------------------------------------------------");
+
     log("");
   } catch (err) {
     log("Error: ", err);
