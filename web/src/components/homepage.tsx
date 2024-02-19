@@ -65,7 +65,7 @@ export function Homepage() {
   return (
     <main
       key="1"
-      className="flex flex-col items-center justify-center min-h-screen py-2"
+      className="flex flex-col items-center justify-center min-h-screen"
     >
       <header className="w-full py-4 px-6 flex justify-between items-center bg-white  bg-gray-800 shadow-md">
         <h1 className="text-2xl font-bold text-gray-900  text-gray-100">
