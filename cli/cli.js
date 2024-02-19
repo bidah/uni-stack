@@ -157,6 +157,8 @@ async function main() {
         appStartCommand
       )}. To launch native app hit I for IOS simulator or A for Android emulator in your keyboard\n`
     );
+    log("For more details on how to use the setup visit:");
+    log("https://github.com/bidah/uni-stack or http://uni-stack.dev");
 
     log("");
     log(" -------------------------------------------------");
