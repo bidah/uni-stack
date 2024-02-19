@@ -67,13 +67,13 @@ export function Homepage() {
       key="1"
       className="flex flex-col items-center justify-center min-h-screen py-2"
     >
-      <header className="w-full py-4 px-6 flex justify-between items-center bg-white dark:bg-gray-800 shadow-md">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+      <header className="w-full py-4 px-6 flex justify-between items-center bg-white  bg-gray-800 shadow-md">
+        <h1 className="text-2xl font-bold text-gray-900  text-gray-100">
           UNI STACK
         </h1>
         <div className="flex space-x-4">
           <Link
-            className="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-400"
+            className="text-gray-900 hover:text-gray-600  text-gray-100  hover:text-gray-400"
             href="https://twitter.com/bidah"
             target="_blank"
           >
@@ -85,7 +85,7 @@ export function Homepage() {
             />
           </Link>
           <Link
-            className="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-400"
+            className="text-gray-900 hover:text-gray-600  text-gray-100  hover:text-gray-400"
             href="https://github.com/bidah/uni-stack"
             target="_blank"
           >
@@ -108,7 +108,7 @@ export function Homepage() {
                 typesafe setup to build fullstack expo universal native apps
               </h1>
 
-              {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+              {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl  text-gray-400">
                 Running everywhere using Expo, Trpc, Prisma and Nativewind.
               </p> */}
             </div>
@@ -122,7 +122,7 @@ export function Homepage() {
         </div>
       </section>
 
-      <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+      <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100  bg-gray-800">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
             <h2 className="text-4xl font-bold tracking-tighter md:text-5xl/tight">
