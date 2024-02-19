@@ -36,7 +36,7 @@ const items = [
     link: "https://trpc.io/",
   },
   {
-    title: "Nativewind v4 • Tamagui • Gluestack-UI",
+    title: "Nativewind v4 • Tamagui • gluestack-ui",
     description:
       "Cherry pick your UI driver. We have 3 options which bring in the best configurations for your app to have a strong theme setup and UI.",
     links: [
