@@ -97,8 +97,8 @@ export function Homepage() {
       <section className="w-full flex justify-center py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h1 className="text-xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+            <div className="space-y-2 mt-16 md:mt-0 lg:mt-0">
+              <h1 className="text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
                 <span className="text-xl md:text-4xl lg:text-5xl">
                   <span>️⚛</span>
                   <span className="ml-4">💻</span>
