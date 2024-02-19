@@ -18,10 +18,10 @@ const items = [
     link: "https://expo.dev",
   },
   {
-    title: "Typescript v5",
+    title: "Expo Router v3",
     description:
-      "TypeScript improves codebase by adding static typing, enhanced tooling, better scalability, and easier collaboration, resulting in more maintainable and reliable software. Integrated with Expo, Expo router, Prisma & Trpc.",
-    link: "https://www.typescriptlang.org",
+      "Expo Router is a versatile router for React Native and web apps. It facilitates seamless navigation between screens, utilizing shared components across platforms (Android, iOS, web). This universal tool incorporates web file-system routing concepts, enabling consistent routing across all platforms.",
+    link: "https://docs.expo.dev/router/introduction/",
   },
   {
     title: "Prisma v5.9",
@@ -34,12 +34,6 @@ const items = [
     description:
       "Automatic typesafety, snappy DX, framework agnostic. Autocompletion, light bundle size. No build or compile steps, no code generation or runtime bloat. Confidence in endpoints. Integrated to expo-router API routes.",
     link: "https://trpc.io/",
-  },
-  {
-    title: "Expo Router v3",
-    description:
-      "Expo Router is a versatile router for React Native and web apps. It facilitates seamless navigation between screens, utilizing shared components across platforms (Android, iOS, web). This universal tool incorporates web file-system routing concepts, enabling consistent routing across all platforms.",
-    link: "https://docs.expo.dev/router/introduction/",
   },
   {
     title: "Nativewind v4 • Tamagui • Gluestack-UI",
@@ -59,6 +53,12 @@ const items = [
         link: "https://gluestack.io/ui/docs/overview/introduction",
       },
     ],
+  },
+  {
+    title: "Typescript v5",
+    description:
+      "TypeScript improves codebase by adding static typing, enhanced tooling, better scalability, and easier collaboration, resulting in more maintainable and reliable software. Integrated with Expo, Expo router, Prisma & Trpc.",
+    link: "https://www.typescriptlang.org",
   },
 ];
 export function Homepage() {
