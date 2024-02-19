@@ -38,7 +38,7 @@ const items = [
   {
     title: "Nativewind v4 • Tamagui • Gluestack-UI",
     description:
-      "Cherry pick your UI driver. We have 3 options which bring in the best configurations for your app to have a strong theme setup and UI. The choice is yours.",
+      "Cherry pick your UI driver. We have 3 options which bring in the best configurations for your app to have a strong theme setup and UI.",
     links: [
       {
         title: "Nativewind",
