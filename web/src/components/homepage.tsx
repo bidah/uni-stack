@@ -42,7 +42,7 @@ const items = [
     link: "https://docs.expo.dev/router/introduction/",
   },
   {
-    title: "Nativewind v4 • Tamagui • Gluestack UI",
+    title: "Nativewind v4 • Tamagui • Gluestack-UI",
     description:
       "Cherry pick your UI driver. We have 3 options which bring in the best configurations for your app to have a strong theme setup and UI. The choice is yours.",
     links: [
@@ -56,7 +56,7 @@ const items = [
       },
       {
         title: "Gluestack UI",
-        link: "http://www.gluestack.io",
+        link: "https://gluestack.io/ui/docs/overview/introduction",
       },
     ],
   },

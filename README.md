@@ -50,7 +50,7 @@ To launch native app hit I for IOS simulator or A for Android emulator in your k
 - UI
   - Nativewind v4
   - Tamagui
-  - Gluestack UI
+  - Gluestack-ui
 - SQLite database
 
 ## Prisma

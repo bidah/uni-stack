@@ -70,7 +70,7 @@ async function main() {
       choices: [
         { name: "Nativewind v4", value: "nativewind" },
         { name: "Tamagui", value: "tamagui" },
-        { name: "Gluestack UI", value: "gluestack" },
+        { name: "Gluestack-ui", value: "gluestack" },
       ],
       default: "Nativewind v4",
     });
