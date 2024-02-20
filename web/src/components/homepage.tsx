@@ -155,7 +155,7 @@ export function Homepage() {
       </section>
 
       <footer className="py-4 pt-12 text-xl text-center align-center">
-        <p>
+        <p className="text-black">
           →{" "}
           <Link
             href="http://www.x.com/bidah"
@@ -167,9 +167,6 @@ export function Homepage() {
           for updates on the project and universal app development
         </p>
       </footer>
-      {/* <div className="py-4">
-        Made with ☕ and ❤️ from a far away 🏖️ by ROFI (x.com/bidah)
-      </div>  */}
     </main>
   );
 }
