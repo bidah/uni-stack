@@ -152,7 +152,6 @@ async function main() {
     log(
       `⚠️ You will get a "TypeError: ExpoResponse is not a constructor" error if you don't do this before running the server \n`
     );
-
     log(
       `Next run ${chalk.cyan(
         packageManager + " " + "web"

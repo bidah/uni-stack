@@ -39,7 +39,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
-    "prisma": "5.8.1",
+    "prisma": "^5.9.1",
     "typescript": "^5.3.0"
   },
   "private": true
