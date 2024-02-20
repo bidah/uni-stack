@@ -139,8 +139,9 @@ async function main() {
     );
 
     log(
-      `To get started rename .env.sample to .env
-      : ${chalk.cyan("mv .env.sample .env")} \n`
+      `To get started rename .env.sample to .env ${chalk.cyan(
+        "mv .env.sample .env"
+      )} \n`
     );
 
     log(
