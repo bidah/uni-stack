@@ -68,8 +68,8 @@ async function main() {
     const uiLibrary = await select({
       message: "Which UI library do you want to use?",
       choices: [
-        { name: "Nativewind v4", value: "nativewind" },
         { name: "Tamagui", value: "tamagui" },
+        { name: "Nativewind v4", value: "nativewind" },
         { name: "gluestack-ui", value: "gluestack" },
       ],
       default: "Nativewind v4",
