@@ -166,19 +166,17 @@ async function main() {
     log("https://github.com/bidah/uni-stack or http://uni-stack.dev");
 
     log("");
-    log(" -------------------------------------------------");
-    log("| Follow ROFI @ http://x.com/bidah for updates on |");
-    log("| the project and universal app development.      |");
-    log(" -------------------------------------------------");
+    log("┌─────────────────────────────────────────────────┐");
+    log("│ Follow ROFI @ http://x.com/bidah for updates on │");
+    log("│ the project and universal app development.      │");
+    log("└─────────────────────────────────────────────────┘");
 
     log("");
 
-    log(" -------------------------------------------------");
-    log("| Universal State of Mind newsletter              |");
-    log("| Get the latest news and resources about the     |");
-    log("| React Native multi-platform ecosystem.          |");
-    log("| subscribe → http://dub.sh/usom                  |");
-    log(" -------------------------------------------------");
+    log("┌─────────────────────────────────────────────────┐");
+    log("│ Universal State of Mind newsletter              │");
+    log("│ subscribe → http://dub.sh/usom                  │");
+    log("└─────────────────────────────────────────────────┘");
 
     log("");
   } catch (err) {
