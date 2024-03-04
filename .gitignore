@@ -16,4 +16,5 @@ web-build/
 .idea
 **/yarn.lock
 **/.env
+with-tamagui-lab/
 
