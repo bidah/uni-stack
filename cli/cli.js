@@ -112,7 +112,11 @@ async function main() {
     let appStartCommand = "";
     let packageManager = "";
 
-    if (isBunInstalled()) {
+    if (uiLibrary === "tamagui") {
+      await execaCommand("yarn").pipeStdout(process.stdout);
+      appStartCommand = "yarn start";
+      packageManager = "yarn";
+    } else if (isBunInstalled()) {
       spinner.text = "Installing app dependencies";
       await execaCommand("bun install").pipeStdout(process.stdout);
       spinner.text = "";
