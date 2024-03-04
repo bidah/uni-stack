@@ -147,7 +147,7 @@ async function main() {
 
     log(
       `Configure your Prisma Client with: ${chalk.cyan(
-        "npm run prisma:generate"
+        packageManager + " " + "run prisma:generate"
       )} \n`
     );
     log(
