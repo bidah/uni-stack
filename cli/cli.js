@@ -112,11 +112,7 @@ async function main() {
     let appStartCommand = "";
     let packageManager = "";
 
-    if (uiLibrary === "tamagui") {
-      await execaCommand("yarn").pipeStdout(process.stdout);
-      appStartCommand = "yarn start";
-      packageManager = "yarn";
-    } else if (isBunInstalled()) {
+    if (isBunInstalled()) {
       spinner.text = "Installing app dependencies";
       await execaCommand("bun install").pipeStdout(process.stdout);
       spinner.text = "";
@@ -134,6 +130,7 @@ async function main() {
       appStartCommand = "npm start";
       packageManager = "npm";
     }
+
     spinner.stop();
     process.chdir("../");
     log(
