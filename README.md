@@ -46,7 +46,7 @@ In a separate terminal run
 npm run start
 ```
 
-To launch native app hit I for IOS simulator or A for Android emulator in your keyboard
+In the same window hit I in your keyboard to launch IOS simulator or A for Android emulator
 
 ## Tech stack
 

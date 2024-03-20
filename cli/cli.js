@@ -159,9 +159,7 @@ async function main() {
       )} to spin up the web app with the expo router API routes\n `
     );
     log(
-      `In a separate terminal, run ${chalk.cyan(
-        appStartCommand
-      )}. To launch native app hit I for IOS simulator or A for Android emulator in your keyboard\n`
+      `In the same window hit I in your keyboard to launch IOS simulator or A for Android emulator\n`
     );
     log("For more details on how to use the setup visit:");
     log("https://github.com/bidah/uni-stack or http://uni-stack.dev");
