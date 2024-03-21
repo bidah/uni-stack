@@ -52,6 +52,5 @@
     "@types/react": "~18.2.14",
     "prisma": "^5.9.1"
   },
-  "private": true,
-  "packageManager": "yarn@4.0.2"
+  "private": true
 }
