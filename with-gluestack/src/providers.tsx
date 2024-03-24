@@ -4,6 +4,7 @@ import { httpBatchLink } from "@trpc/client";
 import React, { useState } from "react";
 import { GluestackUIProvider } from "@gluestack-ui/themed";
 import { config } from "@gluestack-ui/config"; // Optional if you want to use default theme
+import superjson from "superjson";
 
 function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
@@ -14,6 +15,7 @@ function Providers({ children }: { children: React.ReactNode }) {
           url: "http://localhost:8081/api/trpc",
         }),
       ],
+      transformer: superjson,
     })
   );
 

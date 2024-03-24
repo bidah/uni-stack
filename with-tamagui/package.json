@@ -43,6 +43,7 @@
     "react-native-safe-area-context": "4.8.2",
     "react-native-screens": "~3.29.0",
     "react-native-web": "^0.19.9",
+    "superjson": "^2.2.1",
     "tamagui": "^1.90.2",
     "typescript": "^5.3.0",
     "zod": "^3.22.4"
