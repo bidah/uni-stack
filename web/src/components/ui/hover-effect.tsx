@@ -14,10 +14,11 @@ export const HoverEffect = ({
     description: string;
     link?: string;
     links?: Array<{ title: string; link: string }>;
+    svg?: () => JSX.Element | null;
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div
@@ -58,19 +59,20 @@ export const HoverEffect = ({
               <CardContent>
                 {item.description}
                 <br />
-                {item.links &&
-                  item.links.map((item, idx) => (
-                    <Link href={item.link} target="_blank" key={idx}>
-                      →&nbsp;
-                      <Button
-                        size="sm"
-                        variant="link"
-                        className="pl-0 text-black"
-                      >
-                        {item.title}
-                      </Button>
-                    </Link>
-                  ))}
+                {item.svg && item.svg()}
+                <br />
+                {item.links?.map((linkItem, linkIdx) => (
+                  <Link href={linkItem.link} target="_blank" key={linkIdx}>
+                    →&nbsp;
+                    <Button
+                      size="sm"
+                      variant="link"
+                      className="pl-0 text-black"
+                    >
+                      {linkItem.title}
+                    </Button>
+                  </Link>
+                ))}
               </CardContent>
             </_Card>
           </div>
@@ -105,7 +107,11 @@ export const HoverEffect = ({
               <CardHeader>
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
-              <CardContent>{item.description}</CardContent>
+              <CardContent>
+                {item.description}
+                <br />
+                {item.svg && item.svg()}
+              </CardContent>
             </_Card>
           </Link>
         );
