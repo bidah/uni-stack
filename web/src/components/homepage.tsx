@@ -15,7 +15,7 @@ const items = [
   {
     title: "Expo v50",
     description:
-      "Framework for making universal native apps with React Native. This Expo setup is configured to be multi plaform. It runs on Android, iOS, and the web.",
+      "Framework for making universal native apps with React Native. This Expo setup is configured to be multi platform. It runs on Android, iOS, and the web.",
     link: "https://expo.dev",
     svg: "expo-icon",
   },
