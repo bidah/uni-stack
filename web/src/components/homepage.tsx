@@ -15,14 +15,14 @@ const items = [
   {
     title: "Expo v50",
     description:
-      "Expo and EAS form a collection of tools that facilitate the development, testing, and deployment of React-based universal native apps for Android, iOS, and the web. These tools provide a seamless workflow to iterate on your app with assurance.",
+      "Framework for making universal native apps with React Native. This Expo setup is configured to be multi plaform. It runs on Android, iOS, and the web.",
     link: "https://expo.dev",
     svg: "expo-icon",
   },
   {
     title: "Expo Router v3",
     description:
-      "Expo Router is a versatile router for React Native and web apps. It facilitates seamless navigation between screens, utilizing shared components across platforms (Android, iOS, web). This universal tool incorporates web file-system routing concepts, enabling consistent routing across all platforms.",
+      "Expo Router is a versatile router for React Native and web apps based on file-system routing.",
     link: "https://docs.expo.dev/router/introduction/",
     svg: "expo-router-icon",
   },
@@ -36,7 +36,7 @@ const items = [
   {
     title: "tRPC v11",
     description:
-      "Automatic typesafety, snappy DX, framework agnostic. Autocompletion, light bundle size. No build or compile steps, no code generation or runtime bloat. Confidence in endpoints. Integrated to expo-router API routes.",
+      "End-to-end typesafe APIs. tRPC is like using an SDK for your API's server code, giving you confidence in your endpoints",
     link: "https://trpc.io/",
     svg: "trpc-icon",
   },
@@ -62,7 +62,7 @@ const items = [
   {
     title: "Typescript v5",
     description:
-      "TypeScript improves codebase by adding static typing, enhanced tooling, better scalability, and easier collaboration, resulting in more maintainable and reliable software. Integrated with Expo, Expo router, Prisma & Trpc.",
+      "TypeScript improves codebase by adding static typing, enhanced tooling, better scalability, and easier collaboration, resulting in more maintainable and reliable software. ",
     link: "https://www.typescriptlang.org",
     svg: "typescript-icon",
   },
