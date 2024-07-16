@@ -2,8 +2,27 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
+import {
+  CardTitle,
+  CardHeader,
+  CardContent,
+  Card,
+  CardIcon,
+} from "@/components/ui/card";
 import { Button } from "./button";
+import TrpcIcon from "../../../public/trpc-icon.svg";
+import ExpoIcon from "../../../public/expo-icon.svg";
+import TypescriptIcon from "../../../public/typescript-icon.svg";
+import ExpoRouterIcon from "../../../public/expo-router-icon.svg";
+import PrismaIcon from "../../../public/prisma-icon.svg";
+
+const ICONS = {
+  "expo-router-icon": <ExpoRouterIcon width="40" height="40" fill="black" />,
+  "expo-icon": <ExpoIcon width="40" height="40" />,
+  "typescript-icon": <TypescriptIcon width="40" height="40" />,
+  "trpc-icon": <TrpcIcon width="40" height="40" />,
+  "prisma-icon": <PrismaIcon width="40" height="40" />,
+};
 
 export const HoverEffect = ({
   items,
@@ -14,7 +33,7 @@ export const HoverEffect = ({
     description: string;
     link?: string;
     links?: Array<{ title: string; link: string }>;
-    svg?: () => JSX.Element | null;
+    svg?: string;
   }[];
   className?: string;
 }) => {
@@ -59,8 +78,6 @@ export const HoverEffect = ({
               <CardContent>
                 {item.description}
                 <br />
-                {item.svg && item.svg()}
-                <br />
                 {item.links?.map((linkItem, linkIdx) => (
                   <Link href={linkItem.link} target="_blank" key={linkIdx}>
                     →&nbsp;
@@ -104,14 +121,15 @@ export const HoverEffect = ({
               )}
             </AnimatePresence>
             <_Card>
+              {/* <CardIcon>{item.svg && item.svg()}</CardIcon> */}
+              <CardIcon>
+                {/* <ExpoIcon width="40" height="40" /> */}
+                {item.svg && ICONS[item?.svg]}
+              </CardIcon>
               <CardHeader>
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                {item.description}
-                <br />
-                {item.svg && item.svg()}
-              </CardContent>
+              <CardContent>{item.description}</CardContent>
             </_Card>
           </Link>
         );
