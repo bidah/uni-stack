@@ -112,8 +112,7 @@ export function Homepage() {
                   <span className="ml-1">📱</span>
                   <span className="ml-1"></span>
                 </span>
-                typesafe setup to build fullstack React Native universal native
-                apps
+                typesafe setup to build fullstack React Native universal apps
               </h1>
 
               {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl  text-gray-400">
