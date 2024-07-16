@@ -9,6 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import RetroGrid from "./magicui/retro-grid";
 
 const items = [
   {
@@ -94,7 +95,8 @@ export function Homepage() {
         </div>
       </header>
 
-      <section className="w-full flex justify-center py-12 md:py-24 lg:py-32">
+      <section className="w-full relative flex justify-center py-12 md:py-24 lg:py-48">
+        <RetroGrid />
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2 mt-16 md:mt-0 lg:mt-0">
