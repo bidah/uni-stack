@@ -10,6 +10,7 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import RetroGrid from "./magicui/retro-grid";
+import TextRevealByWord from "./magicui/text-reveal";
 
 const items = [
   {
@@ -129,6 +130,9 @@ export function Homepage() {
         </div>
       </section>
 
+      <section className="w-full flex justify-center  bg-white">
+        <TextRevealByWord text="With Uni-stack you get share routing, component logic and UI to its fullest but also can opt-in to create components specific to any platform for more fined grained control whenever you need to. Everything is typesafe form routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup, you get a plain old React Native setup that works on IOS, Android and the web." />
+      </section>
       <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 ">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
