@@ -131,7 +131,7 @@ export function Homepage() {
       </section>
 
       <section className="w-full flex justify-center  bg-white">
-        <TextRevealByWord text="With Uni-stack you get to share routing, component logic and UI to its fullest but also can opt-in to create components specific to any platform for more fined grained control whenever you need to. Everything is typesafe form routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup needed, what you get is an enhanced Expo / React Native setup that works on IOS, Android and the web with the best multi-plaform DX." />
+        <TextRevealByWord text="With Uni-stack you get to share routing, component logic and UI to its fullest but also can opt-in to create components specific to any platform for more fined grained control whenever you need to. Everything is typesafe from routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup needed, what you get is an enhanced Expo / React Native setup that works on IOS, Android and the web with the best multi-plaform DX." />
       </section>
       <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 ">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
