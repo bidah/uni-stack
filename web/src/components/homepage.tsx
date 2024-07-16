@@ -30,7 +30,7 @@ const items = [
   {
     title: "Prisma v5.9",
     description:
-      "Prisma enhances the developer experience in working with databases by offering an intuitive data model, automated migrations, type-safety, and auto-completion.",
+      "Prisma enhances the developer experience in working with your database, offering an intuitive data model, automated migrations, type-safety, and auto-completion.",
     link: "https://www.prisma.io",
     svg: "prisma-icon",
   },
