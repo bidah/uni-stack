@@ -37,7 +37,7 @@ const items = [
   {
     title: "tRPC v11",
     description:
-      "End-to-end typesafe APIs. tRPC is like using an SDK for your API's server code, giving you confidence in your endpoints",
+      "End-to-end typesafe APIs. tRPC is like using an SDK for your API's server code, giving you confidence in your endpoints.",
     link: "https://trpc.io/",
     svg: "trpc-icon",
   },
