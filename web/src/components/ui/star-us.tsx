@@ -26,7 +26,7 @@ export default function StarUs() {
   }, []);
 
   return (
-    <Button
+    <a
       as="a"
       href="https://github.com/bidah/uni-stack"
       target="_blank"
@@ -53,7 +53,7 @@ export default function StarUs() {
       <span className="ml-0 rounded-md bg-muted py-1 text-sm text-muted-foreground">
         {starCount !== null ? starCount.toLocaleString() : ""}
       </span>
-    </Button>
+    </a>
   );
 }
 
