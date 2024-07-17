@@ -30,12 +30,12 @@ export default function StarUs() {
       href="https://github.com/bidah/uni-stack"
       target="_blank"
       rel="noopener noreferrer"
-      variant="outline"
       className="inline-flex items-center gap-2 rounded-md border border-input bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
     >
       <GithubIcon className="h-5 w-5" />
       <span>Star on GitHub</span>
       <svg
+        title="star"
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
@@ -60,6 +60,7 @@ function GithubIcon(props) {
   return (
     <svg
       {...props}
+      title="github icon"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -80,6 +81,7 @@ function XIcon(props) {
   return (
     <svg
       {...props}
+      title="x icon"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
