@@ -4,21 +4,54 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 export default function StarUs() {
+  const [starCount, setStarCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    async function fetchStarCount() {
+      try {
+        const response = await fetch(
+          "https://api.github.com/repos/bidah/uni-stack"
+        );
+        const data = await response.json();
+        setStarCount(data.stargazers_count);
+      } catch (error) {
+        console.error("Error fetching star count:", error);
+      }
+    }
+
+    fetchStarCount();
+  }, []);
+
   return (
     <Button
       as="a"
-      href="https://github.com/shadcn/ui"
+      href="https://github.com/bidah/uni-stack"
       target="_blank"
       rel="noopener noreferrer"
       variant="outline"
-      className="inline-flex items-center gap-2 rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+      className="inline-flex items-center gap-2 rounded-md border border-input bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
     >
       <GithubIcon className="h-5 w-5" />
-      <span>Star us on GitHub</span>
-      <span className="ml-2 rounded-md bg-muted px-2 py-1 text-xs text-muted-foreground">
-        21.4k
+      <span>Star on GitHub</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="black"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="h-4 w-4"
+      >
+        <polygon points="12 2 15 8.5 22 9.3 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.3 9 8.5 12 2" />
+      </svg>
+      <span className="ml-0 rounded-md bg-muted py-1 text-sm text-muted-foreground">
+        {starCount !== null ? starCount.toLocaleString() : ""}
       </span>
     </Button>
   );
