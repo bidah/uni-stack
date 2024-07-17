@@ -14,6 +14,7 @@ import TextRevealByWord from "./magicui/text-reveal";
 import ShimmerButton from "./magicui/shimmer-button";
 import { useState } from "react";
 import { MyFooter } from "./ui/my-footer";
+import StarUs from "./ui/star-us";
 
 const items = [
   {
@@ -85,10 +86,11 @@ export function Homepage() {
       key="1"
       className="flex flex-col items-center justify-center min-h-screen"
     >
-      <header className="w-full py-4 px-6 flex justify-between items-center bg-white  bg-gray-800 shadow-md">
+      <header className="border-1  border-gray-200 container z-50 fixed top-5 w-full py-4 px-6 flex justify-between items-center bg-white bg-gray-800 shadow-md rounded-full">
         <h1 className="text-2xl font-bold text-gray-900  text-gray-100">
           UNI STACK
         </h1>
+        <StarUs />
         <div className="flex space-x-4">
           <Link
             className="text-gray-900 hover:text-gray-600  text-gray-100  hover:text-gray-400"
