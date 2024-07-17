@@ -27,7 +27,6 @@ export default function StarUs() {
 
   return (
     <a
-      as="a"
       href="https://github.com/bidah/uni-stack"
       target="_blank"
       rel="noopener noreferrer"
