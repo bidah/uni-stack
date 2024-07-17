@@ -8,7 +8,7 @@ export default function Document() {
         <meta name="title" content="uni stack" />
         <meta
           name="description"
-          content="typesafe setup to build fullstack expo universal native apps"
+          content="typesafe setup to build fullstack React Native universal apps"
         ></meta>
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://uni-stack.vercel.app/" />
