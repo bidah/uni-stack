@@ -74,7 +74,7 @@ export function Homepage() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
-    navigator.clipboard.writeText("npx create-uni-app");
+    navigator.clipboard.writeText("npx create-uni-app@latest");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
   };
@@ -150,7 +150,7 @@ export function Homepage() {
         {/* <TextRevealByWord text="With Uni-stack's Expo setup you get to share routing, component logic and UI to it's fullest but also can opt-in to create components specific to any platform for more fined grained control whenever you need to. Everything is typesafe from database calls, routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup. What you get is an enhanced React Native app that works on IOS, Android and the web backed in with the best fullstack multi-platform DX." /> */}
         <TextRevealByWord text="With Uni-stack's Expo setup you get to share routing, component logic and UI to it's fullest. Everything is typesafe from database calls, routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup. What you get is an enhanced React Native app that works on IOS, Android and the web backed in with the best fullstack multi-platform DX." />
       </section>
-      <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 ">
+      {/* <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 ">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
             <h2 className="text-black text-4xl font-bold tracking-tighter md:text-5xl/tight">
@@ -180,6 +180,19 @@ export function Homepage() {
             </div>
           </div>
         </div>
+      </section> */}
+
+      <section className="relative group mt-14">
+        <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-gray-600/50 rounded-full blur-3xl"></div>
+        <Image
+          width={1200}
+          height={1200}
+          className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
+          src={"/image.png"}
+          alt="dashboard"
+        />
+
+        <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
       </section>
 
       <footer className="py-4 pt-12 text-xl text-center align-center">
