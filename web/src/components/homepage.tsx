@@ -13,6 +13,7 @@ import RetroGrid from "./magicui/retro-grid";
 import TextRevealByWord from "./magicui/text-reveal";
 import ShimmerButton from "./magicui/shimmer-button";
 import { useState } from "react";
+import { MyFooter } from "./ui/my-footer";
 
 const items = [
   {
@@ -182,7 +183,7 @@ export function Homepage() {
         </div>
       </section> */}
 
-      <section className="relative group mt-14">
+      {/* <section className="relative group mt-14">
         <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-gray-600/50 rounded-full blur-3xl"></div>
         <Image
           width={1200}
@@ -193,9 +194,10 @@ export function Homepage() {
         />
 
         <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
-      </section>
+      </section> */}
 
-      <footer className="py-4 pt-12 text-xl text-center align-center">
+      {/* <MyFooter>hello there</MyFooter> */}
+      <footer className="py-20 text-xl text-center align-center bg-slate-100 w-full">
         <p className="text-black">
           →{" "}
           <Link
