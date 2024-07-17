@@ -11,6 +11,7 @@ import {
 } from "./ui/tooltip";
 import RetroGrid from "./magicui/retro-grid";
 import TextRevealByWord from "./magicui/text-reveal";
+import ShimmerButton from "./magicui/shimmer-button";
 
 const items = [
   {
@@ -101,7 +102,7 @@ export function Homepage() {
         </div>
       </header>
 
-      <section className="w-full relative flex justify-center py-12 md:py-24 lg:py-48">
+      <section className="w-full relative flex justify-center py-12 md:py-24 lg:py-40">
         <RetroGrid />
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
@@ -116,6 +117,12 @@ export function Homepage() {
                 typesafe setup to build fullstack React Native universal apps
               </h1>
 
+              <div className="flex justify-center pt-20">
+                <ShimmerButton className="mx-10 ">
+                  <p className="mr-3 text-2xl">npx create-uni-app@latest</p>
+                  <CopyIcon />
+                </ShimmerButton>
+              </div>
               {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl  text-gray-400">
                 Running everywhere using Expo, Trpc, Prisma and Nativewind.
               </p> */}
@@ -131,7 +138,8 @@ export function Homepage() {
       </section>
 
       <section className="w-full flex justify-center  bg-white">
-        <TextRevealByWord text="With Uni-stack's Expo setup you get to share routing, component logic and UI to it's fullest but also can opt-in to create components specific to any platform for more fined grained control whenever you need to. Everything is typesafe from database calls, routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup. What you get is an enhanced React Native app that works on IOS, Android and the web backed in with the best fullstack multi-platform DX." />
+        {/* <TextRevealByWord text="With Uni-stack's Expo setup you get to share routing, component logic and UI to it's fullest but also can opt-in to create components specific to any platform for more fined grained control whenever you need to. Everything is typesafe from database calls, routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup. What you get is an enhanced React Native app that works on IOS, Android and the web backed in with the best fullstack multi-platform DX." /> */}
+        <TextRevealByWord text="With Uni-stack's Expo setup you get to share routing, component logic and UI to it's fullest. Everything is typesafe from database calls, routing, components, queries and mutations. It all fits together nicely in a simple stack. No monorepo setup. What you get is an enhanced React Native app that works on IOS, Android and the web backed in with the best fullstack multi-platform DX." />
       </section>
       <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-100 ">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
@@ -185,7 +193,6 @@ export function Homepage() {
 function CopyIcon(props) {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -195,6 +202,7 @@ function CopyIcon(props) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     >
       <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9" />
