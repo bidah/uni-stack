@@ -12,6 +12,7 @@ import {
 import RetroGrid from "./magicui/retro-grid";
 import TextRevealByWord from "./magicui/text-reveal";
 import ShimmerButton from "./magicui/shimmer-button";
+import { useState } from "react";
 
 const items = [
   {
@@ -70,6 +71,14 @@ const items = [
   },
 ];
 export function Homepage() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText("npx create-uni-app");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+  };
+
   return (
     <main
       key="1"
@@ -118,9 +127,9 @@ export function Homepage() {
               </h1>
 
               <div className="flex justify-center pt-20">
-                <ShimmerButton className="mx-10 ">
+                <ShimmerButton className="mx-10 " onClick={handleCopyClick}>
                   <p className="mr-3 text-2xl">npx create-uni-app@latest</p>
-                  <CopyIcon />
+                  {copied ? <TickIcon /> : <CopyIcon />}
                 </ShimmerButton>
               </div>
               {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl  text-gray-400">
@@ -187,6 +196,25 @@ export function Homepage() {
         </p>
       </footer>
     </main>
+  );
+}
+
+function TickIcon(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M20 6L9 17l-5-5" />
+    </svg>
   );
 }
 
