@@ -90,7 +90,7 @@ export function Homepage() {
         <h1 className="text-2xl font-bold text-gray-900  text-gray-100">
           UNI STACK
         </h1>
-        <StarUs />
+        {typeof window !== "undefined" && window.innerWidth > 768 && <StarUs />}
         <div className="flex space-x-4">
           <Link
             className="text-gray-900 hover:text-gray-600  text-gray-100  hover:text-gray-400"
