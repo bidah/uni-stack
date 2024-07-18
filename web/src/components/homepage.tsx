@@ -130,7 +130,7 @@ export function Homepage() {
               </h1>
 
               <div className="flex justify-center pt-20">
-                <ShimmerButton className="mx-10 " onClick={handleCopyClick}>
+                <ShimmerButton onClick={handleCopyClick}>
                   <p className="mr-3 text-2xl">npx create-uni-app@latest</p>
                   {copied ? <TickIcon /> : <CopyIcon />}
                 </ShimmerButton>
