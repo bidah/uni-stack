@@ -17,4 +17,5 @@ web-build/
 **/yarn.lock
 **/.env
 with-tamagui-lab/
+create-uni-app-cli/
 
