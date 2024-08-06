@@ -15,6 +15,7 @@ import ShimmerButton from "./magicui/shimmer-button";
 import { useState } from "react";
 import { MyFooter } from "./ui/my-footer";
 import StarUs from "./ui/star-us";
+import UnistackLogo from "../../public/unistack-logo.svg";
 
 const items = [
   {
@@ -87,9 +88,10 @@ export function Homepage() {
       className="flex flex-col items-center justify-center min-h-screen top-20 relative"
     >
       <header className="border-1 border-gray-200 container z-50 fixed top-5 w-full py-4 px-6 flex justify-between items-center bg-white bg-opacity-50  backdrop-blur-md shadow-md rounded-full">
-        <h1 className="text-2xl font-bold text-gray-900  text-gray-100">
-          UNI STACK
-        </h1>
+        <div className="flex items-center space-x-2">
+          <UnistackLogo />
+          <h1 className="text-2xl text-gray-900  text-gray-100">UNI STACK</h1>
+        </div>
         {typeof window !== "undefined" && window.innerWidth > 768 && <StarUs />}
         <div className="flex space-x-4">
           <Link
