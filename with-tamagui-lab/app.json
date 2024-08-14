@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "uni-stack-with-tamagui",
+    "slug": "uni-stack-with-tamagui",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "scheme": "com.uni.with-tamagui",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
