@@ -17,4 +17,5 @@ web-build/
 **/yarn.lock
 **/.env
 create-uni-app-cli/
+supabase/
 
